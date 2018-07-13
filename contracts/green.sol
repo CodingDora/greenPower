@@ -431,6 +431,7 @@ contract GREEN is StandardBurnableToken, PausableToken, CanReclaimToken, HasNoEt
         balances[msg.sender] = INITIAL_SUPPLY;
         emit Transfer(0x0, msg.sender, INITIAL_SUPPLY);
         emit Initialize(msg.sender, 0x0, totalSupply_);
+
     }
 
     struct investor {
