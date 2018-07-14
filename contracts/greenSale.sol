@@ -122,7 +122,6 @@ contract Crowdsale {
     );
 
   /**
-   * @param _rate Number of token units a buyer gets per wei
    * @param _wallet Address where collected funds will be forwarded to
    * @param _token Address of the token being sold
    */
