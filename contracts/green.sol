@@ -434,12 +434,6 @@ contract GREEN is StandardBurnableToken, PausableToken, CanReclaimToken, HasNoEt
 
     }
 
-    struct investor {
-        uint256 _sentAmount;
-        uint256 _initialAmount;
-        uint256 _limit;
-    }
-
     /**
    * @dev Function that burn owner _value tokens.
    */
