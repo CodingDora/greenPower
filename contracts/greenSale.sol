@@ -167,8 +167,8 @@ contract Crowdsale {
         );
 
         token.transfer(_beneficiary, tokens);
-        _updatePurchasingState(_beneficiary, weiAmount);
-        _forwardFunds();
+       
+         _forwardFunds();
 
         
     }
@@ -192,19 +192,6 @@ contract Crowdsale {
         require(_weiAmount != 0);
     }
 
-  /**
-   * @dev Override for extensions that require an internal state to check for validity (current user contributions, etc.)
-   * @param _beneficiary Address receiving the tokens
-   * @param _weiAmount Value in wei involved in the purchase
-   */
-    function _updatePurchasingState(
-        address _beneficiary,
-        uint256 _weiAmount
-    )
-        internal
-    {
-    // optional override
-    }
 
   /**
    * @dev Override to extend the way in which ether is converted to tokens.
